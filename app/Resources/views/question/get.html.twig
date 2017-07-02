@@ -1,0 +1,17 @@
+{% extends 'question/question.html.twig' %}
+
+{% block body %}
+    <form role="form" method="post">
+        <h1>{{ question.label }}</h1>
+        <p>pour {{ question.player.name }}</p>
+        <ul>
+            {% for answer in answers %}
+                <li>
+                    <input id="answer{{ answer.id }}" type="radio" name="answerId" value="{{ answer.id }}"/>
+                    <label for="answer{{ answer.id }}">{{ answer.label }}</label>
+                </li>
+            {% endfor %}
+        </ul>
+        <button type="submit">Valider</button>
+    </form>
+{% endblock %}

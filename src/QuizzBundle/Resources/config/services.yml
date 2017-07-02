@@ -1,0 +1,40 @@
+
+services:
+    admin.question:
+        class: QuizzBundle\Admin\QuestionAdmin
+        arguments:
+          - ~
+          - QuizzBundle\Entity\Question
+          - 'PixSortableBehaviorBundle:SortableAdmin'
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: title.quizz
+              label: title.question
+              label_catalogue: QuizzAdminBundle
+              label_translator_strategy: sonata.admin.label.strategy.underscore
+    admin.answer:
+        class: QuizzBundle\Admin\AnswerAdmin
+        arguments: [~,QuizzBundle\Entity\Answer, ~]
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: title.quizz
+              label: title.answer
+              label_catalogue: QuizzAdminBundle
+              label_translator_strategy: sonata.admin.label.strategy.underscore
+    admin.player:
+        class: QuizzBundle\Admin\PlayerAdmin
+        arguments: [~,QuizzBundle\Entity\Player, ~]
+        tags:
+            - name: sonata.admin
+              manager_type: orm
+              group: title.quizz
+              label: title.player
+              label_catalogue: QuizzAdminBundle
+              label_translator_strategy: sonata.admin.label.strategy.underscore
+
+    twig.extension.sortbyfield:
+        class: Snilius\Twig\SortByFieldExtension
+        tags:
+          - { name: twig.extension }

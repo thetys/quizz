@@ -1,0 +1,132 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file original="file.ext" source-language="fr" target-language="fr" datatype="plaintext">
+        <body>
+            <!--titles-->
+            <trans-unit id="title_question">
+                <source>title.question</source>
+                <target>Question</target>
+            </trans-unit>
+            <trans-unit id="title_answer">
+                <source>title.answer</source>
+                <target>Réponse</target>
+            </trans-unit>
+            <trans-unit id="title_player">
+                <source>title.player</source>
+                <target>Joueur</target>
+            </trans-unit>
+            <trans-unit id="title_quizz">
+                <source>title.quizz</source>
+                <target>Quizz</target>
+            </trans-unit>
+
+            <!--lists-->
+            <trans-unit id="list_label_answers">
+                <source>list.label_answers</source>
+                <target>Réponses</target>
+            </trans-unit>
+            <trans-unit id="list_label_question">
+                <source>list.label_question</source>
+                <target>Question</target>
+            </trans-unit>
+            <trans-unit id="list_label_label">
+                <source>list.label_label</source>
+                <target>Libellé</target>
+            </trans-unit>
+            <trans-unit id="list_label_correct_answer">
+                <source>list.label_correct_answer</source>
+                <target>Bonne réponse</target>
+            </trans-unit>
+            <trans-unit id="list_label__action">
+                <source>list.label__action</source>
+                <target>Action</target>
+            </trans-unit>
+            <trans-unit id="list_label_name">
+                <source>list.label_name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="list_label_player">
+                <source>list.label_player</source>
+                <target>Joueur</target>
+            </trans-unit>
+
+            <!--forms-->
+            <trans-unit id="form_label_answers">
+                <source>form.label_answers</source>
+                <target>Réponses</target>
+            </trans-unit>
+            <trans-unit id="form_label_question">
+                <source>form.label_question</source>
+                <target>Question</target>
+            </trans-unit>
+            <trans-unit id="form_label_label">
+                <source>form.label_label</source>
+                <target>Libellé</target>
+            </trans-unit>
+            <trans-unit id="form_label_correct_answer">
+                <source>form.label_correct_answer</source>
+                <target>Bonne réponse</target>
+            </trans-unit>
+            <trans-unit id="form_label_name">
+                <source>form.label_name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="form_label_player">
+                <source>form.label_player</source>
+                <target>Joueur</target>
+            </trans-unit>
+
+            <!--breadcrumbs-->
+            <trans-unit id="breadcrumb_link_question_list">
+                <source>breadcrumb.link_question_list</source>
+                <target>Liste de questions</target>
+            </trans-unit>
+            <trans-unit id="breadcrumb_link_answer_list">
+                <source>breadcrumb.link_answer_list</source>
+                <target>Liste de réponses</target>
+            </trans-unit>
+            <trans-unit id="breadcrumb_link_player_list">
+                <source>breadcrumb.link_player_list</source>
+                <target>Liste de joueurs</target>
+            </trans-unit>
+            <trans-unit id="breadcrumb_link_question_create">
+                <source>breadcrumb.link_question_create</source>
+                <target>Créer une question</target>
+            </trans-unit>
+            <trans-unit id="breadcrumb_link_answer_create">
+                <source>breadcrumb.link_answer_create</source>
+                <target>Créer une réponse</target>
+            </trans-unit>
+            <trans-unit id="breadcrumb_link_player_create">
+                <source>breadcrumb.link_player_create</source>
+                <target>Créer un joueur</target>
+            </trans-unit>
+
+            <!--filters-->
+            <trans-unit id="filter_label_label">
+                <source>filter.label_label</source>
+                <target>Libellé</target>
+            </trans-unit>
+            <trans-unit id="filter_label_question">
+                <source>filter.label_question</source>
+                <target>Question</target>
+            </trans-unit>
+            <trans-unit id="filter_label_answers">
+                <source>filter.label_answers</source>
+                <target>Réponses</target>
+            </trans-unit>
+            <trans-unit id="filter_label_correct_answer">
+                <source>filter.label_correct_answer</source>
+                <target>Bonne réponse</target>
+            </trans-unit>
+            <trans-unit id="filter_label_name">
+                <source>filter.label_name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="filter_label_player">
+                <source>filter.label_player</source>
+                <target>Joueur</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

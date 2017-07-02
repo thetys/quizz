@@ -1,0 +1,14 @@
+{% extends 'question/question.html.twig' %}
+
+{% block body %}
+    {% if correct %}
+        Correct
+    {% else %}
+        Faux
+    {% endif %}
+    {% if nextQuestionLink != null %}
+        <a href="{{ nextQuestionLink }}">Suivant</a>
+    {% else %}
+        C'est la fin
+    {% endif %}
+{% endblock %}
