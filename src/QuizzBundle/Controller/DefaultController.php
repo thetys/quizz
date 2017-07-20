@@ -2,6 +2,7 @@
 
 namespace QuizzBundle\Controller;
 
+use Doctrine\ORM\NoResultException;
 use QuizzBundle\Service\QuestionService;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -16,11 +17,19 @@ class DefaultController extends Controller
      */
     public function indexAction(QuestionService $questionService)
     {
-        $firstQuestionLink = $this->generateUrl(
-            'question_get',
-            array(
-                'id' => $questionService->getFirst()->getId()
-            ));
+        try {
+            $first = $questionService->getFirst();
+        } catch (NoResultException $e) {
+            $first = null;
+        }
+        $firstQuestionLink = null;
+        if ($first != null) {
+            $firstQuestionLink = $this->generateUrl(
+                'question_get',
+                array(
+                    'id' => $first->getId()
+                ));
+        }
         return $this
             ->render(
                 '@Quizz/default/index.html.twig',
