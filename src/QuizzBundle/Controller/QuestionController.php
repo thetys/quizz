@@ -32,7 +32,7 @@ class QuestionController extends Controller
             Criteria::create()->orderBy(array('label' => Criteria::ASC))
         );
         return $this->render(
-            'question/get.html.twig',
+            '@Quizz/question/get.html.twig',
             array("question" => $question, "answers" => $answers)
         );
     }
@@ -62,7 +62,7 @@ class QuestionController extends Controller
                 ));
         }
         return $this->render(
-            'question/answer.html.twig',
+            '@Quizz/question/answer.html.twig',
             array(
                 "question" => $question,
                 "correct" => ($question->getCorrectAnswer()->getId() == $answerId),
