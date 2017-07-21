@@ -25,7 +25,9 @@ class AppKernel extends Kernel
             new \Sonata\AdminBundle\SonataAdminBundle(),
 
             new \Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-            new Pix\SortableBehaviorBundle\PixSortableBehaviorBundle()
+            new Pix\SortableBehaviorBundle\PixSortableBehaviorBundle(),
+
+            new Symfony\Bundle\AsseticBundle\AsseticBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
