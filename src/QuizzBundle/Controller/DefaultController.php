@@ -22,19 +22,12 @@ class DefaultController extends Controller
         } catch (NoResultException $e) {
             $first = null;
         }
-        $firstQuestionLink = null;
-        if ($first != null) {
-            $firstQuestionLink = $this->generateUrl(
-                'question_get',
-                array(
-                    'id' => $first->getId()
-                ));
-        }
+        
         return $this
             ->render(
                 '@Quizz/default/index.html.twig',
                 array(
-                    "firstQuestionLink" => $firstQuestionLink
+                    "firstQuestionId" => ($first ? $first->getId() : null)
                 )
             );
     }

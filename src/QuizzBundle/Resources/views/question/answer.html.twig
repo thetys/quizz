@@ -6,8 +6,8 @@
     {% else %}
         Faux
     {% endif %}
-    {% if nextQuestionLink != null %}
-        <a href="{{ nextQuestionLink }}">Suivant</a>
+    {% if nextQuestionId != null %}
+        <a href="{{ path('question_get', {'id': nextQuestionId}) }}">Suivant</a>
     {% else %}
         C'est la fin
     {% endif %}

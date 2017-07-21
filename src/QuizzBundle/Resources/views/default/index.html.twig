@@ -3,5 +3,5 @@
 {% block title %}Start{% endblock %}
 
 {% block body %}
-    <a href="{{ firstQuestionLink }}" class="button">Start</a>
+    <a href="{{ path('question_get', {'id': firstQuestionId}) }}" class="button">Start</a>
 {% endblock %}

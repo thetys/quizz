@@ -53,20 +53,14 @@ class QuestionController extends Controller
             throw new \HttpInvalidParamException("Aucune réponse fournie", 400);
         }
         $question = $questionService->get($id);
-        $nextQuestionLink = null;
-        if ($questionService->hasNext($question)) {
-            $nextQuestionLink = $this->generateUrl(
-                'question_get',
-                array(
-                    'id' => $questionService->getNext($question)->getId()
-                ));
-        }
+
         return $this->render(
             '@Quizz/question/answer.html.twig',
             array(
                 "question" => $question,
                 "correct" => ($question->getCorrectAnswer()->getId() == $answerId),
-                "nextQuestionLink" => $nextQuestionLink
+                "nextQuestionId" => ($questionService->hasNext($question) ?
+                    $questionService->getNext($question)->getId() : null)
             )
         );
     }
