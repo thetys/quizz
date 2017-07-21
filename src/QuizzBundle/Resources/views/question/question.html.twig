@@ -1,38 +1,4 @@
 {% extends '@Quizz/base.html.twig' %}
 
-{% block stylesheets %}
-    {{  parent() }}
-
-    .question-container {
-        z-index: 2;
-        max-width: 740px;
-        width: 100%;
-    }
-    form {
-        z-index: 2;
-    }
-    .question-container_title {
-        font-size: 3rem;
-        margin-bottom: 40px;
-        padding-left: 80px;
-        padding-right: 20px
-    }
-    .question-bg {
-        position: absolute;
-        z-index: 1;
-        width: 800px;
-    }
-    ul { text-align: left; padding-left: 80px;}
-
-    li:nth-child(1) { padding-left: 60px; }
-    li:nth-child(2) { padding-left: 40px; }
-    li:nth-child(3) { padding-left: 20px; }
-    li:nth-child(4) { padding-left: 0px; }
-
-    li {
-        margin-bottom: 20px;
-    }
-{% endblock %}
-
 
 {% block title %}{{ question.player.name }}, {{ question.label }}{% endblock %}
