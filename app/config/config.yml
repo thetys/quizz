@@ -79,3 +79,9 @@ stof_doctrine_extensions:
   orm:
     default:
       sortable: true
+
+assetic:
+  debug: '%kernel.debug%'
+  use_controller: '%kernel.debug%'
+  filters:
+    cssrewrite: ~
